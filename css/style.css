@@ -1,0 +1,58 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 111111;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+}
+.marg{
+    margin-top: 70px;
+    color: wheat;
+    /* position: relative; */
+}
+.layer{
+    width: 80%;
+    height: 60vh;
+    background-color: orangered;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    
+}
+@keyframes change{
+    0%{
+        background-color: aliceblue;
+    }
+    50%{
+        background-color: #222;
+    }
+    75%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: orangered;
+    }
+}
+.img{
+    position: absolute;
+    top: 10%;
+    right: -5%;
+
+    
+}
+
